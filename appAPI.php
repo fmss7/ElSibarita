@@ -23,13 +23,13 @@ class API{
 						echo 'Unknown method';
 					}
 				}else{
-					echo 'No method passed';
+					echo 'No method provided';
 				}
 			}else{
 				echo 'Invalid apikey';
 			}
 		}else{
-			echo 'No apikey passed';
+			echo 'No apikey provided';
 		}
 	}
 	

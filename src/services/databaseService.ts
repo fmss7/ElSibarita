@@ -7,14 +7,14 @@ import 'rxjs';
 @Injectable()
 
 export class DatabaseService {
-
-	private baseUrl = "http://192.168.1.5/appAPI.php?method="
+	private apikey: string = 'sibari';
+	private apiurl: string = 'https://elsibarita.000webhostapp.com/appAPI.php?apikey='+ this.apikey +'&method=';
 
 	constructor(private http: Http) {
 	}
 
 	getUsuarios(): Observable<any> {
-		return this.http.get(this.baseUrl + 'getUsuarios')
+		return this.http.get(this.apiurl + 'getUsuarios')
 			.map(res => {
 				if (res["_body"] != "") {
 					return JSON.parse(res["_body"]);
