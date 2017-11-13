@@ -1,0 +1,57 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>El Sibarita</ion-title>
+	</ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<div class="login-box">
+		<ion-list inset>
+			<ion-item>
+				<ion-label>Username</ion-label>
+				<ion-input type="text"></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label>Password</ion-label>
+				<ion-input type="password"></ion-input>
+			</ion-item>
+		</ion-list>
+
+		<ion-row>
+			<ion-col class="signup-col">
+				<button color="secondary" ion-button class="submit-btn" full type="submit" (click)="logIn(email, password)">Acceder</button>
+			</ion-col>
+		</ion-row>
+	</div>
+
+	<div class="socialLogin">
+		<ion-row>
+			<ion-col col-12 style="padding-bottom:0">
+				<h5 style="margin-bottom:0">O accede con:</h5>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col col-2></ion-col>
+			<ion-col col-3>
+				<ion-icon name="logo-facebook" class="socialNetworkIcons"></ion-icon>
+			</ion-col>
+			<ion-col col-3>
+				<ion-icon name="logo-googleplus" class="socialNetworkIcons"></ion-icon>
+			</ion-col>
+			<ion-col col-3>
+				<ion-icon name="logo-twitter" class="socialNetworkIcons"></ion-icon>
+			</ion-col>
+			<ion-col col-1></ion-col>
+		</ion-row>
+
+		<ion-row class="col12Row">
+			<ion-col col-12 style="padding-top: 5%">
+				<h6>Don't have an account?
+					<a (click)="goToSignup()">Create Account</a>
+				</h6>
+			</ion-col>
+		</ion-row>
+	</div>
+</ion-content>

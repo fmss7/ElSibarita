@@ -1,17 +1,15 @@
 <ion-menu [content]="content">
 	<ion-header>
-		<ion-toolbar>
+		<ion-toolbar color="dark">
 			<ion-title>Menu</ion-title>
 		</ion-toolbar>
 	</ion-header>
 
 	<ion-content>
 		<ion-list>
-			<ion-list-header class="sideMenuHeader">User</ion-list-header>
-			<button menuClose ion-item>
-				<ion-icon item-left name="log-in"></ion-icon> Login</button>
-			<button menuClose ion-item>
-				<ion-icon item-left name="person-add"></ion-icon> Sign Up</button>
+			<ion-list-header class="sideMenuHeader">Usuario</ion-list-header>
+			<button menuClose ion-item (click)="goToLogIn()"><ion-icon item-left name="log-in"></ion-icon> Accede</button>
+			<button menuClose ion-item (click)="goToSignIn()"><ion-icon item-left name="person-add"></ion-icon> Regístrate</button>
 		</ion-list>
 	</ion-content>
 </ion-menu>

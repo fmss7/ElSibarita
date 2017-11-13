@@ -4,7 +4,7 @@ require_once('../config_params.php');
 
 class API{
 
-	private $methods = ['getUsuarios'];
+	private $methods = ['getUsuarios', 'signIn'];
 
     function __construct(){
         header('Access-Control-Allow-Origin: *');
@@ -31,6 +31,10 @@ class API{
 		}else{
 			echo 'No apikey provided';
 		}
+	}
+
+	function signIn(){
+		print_r($_POST);
 	}
 	
 	private function getUsuarios(){

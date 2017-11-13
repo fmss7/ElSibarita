@@ -4,18 +4,13 @@
 			<ion-icon name="menu"></ion-icon>
 		</button>
 		<ion-title>El Sibarita</ion-title>
-		<ion-buttons end>
-			<button ion-button icon-only>
-				<ion-icon name="home"></ion-icon>
-			</button>
-		</ion-buttons>
 	</ion-navbar>
 </ion-header>
 
 <ion-tabs>
 	<ion-tab [root]="homeTab" tabTitle="Home" tabIcon="home"></ion-tab>
-	<ion-tab [root]="" tabTitle="Descubre" tabIcon="search"></ion-tab>
-	<ion-tab [root]="" tabTitle="Crea" tabIcon="add-circle"></ion-tab>
+	<ion-tab [root]="descubreTab" tabTitle="Descubre" tabIcon="search"></ion-tab>
+	<ion-tab [root]="creaTab" tabTitle="Crea" tabIcon="add-circle"></ion-tab>
 	<ion-tab [root]="" tabTitle="nose" tabIcon="heart"></ion-tab>
 	<ion-tab [root]="" tabTitle="niidea" tabIcon="help-buoy"></ion-tab>
 </ion-tabs>

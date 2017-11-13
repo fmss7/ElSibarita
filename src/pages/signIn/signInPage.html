@@ -1,0 +1,40 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>El Sibarita</ion-title>
+	</ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list inset>
+		<ion-item>
+			<ion-label>Nombre:</ion-label>
+			<ion-input type="text" [(ngModel)]="name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Apellido:</ion-label>
+			<ion-input type="text" [(ngModel)]="surname"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Nickname:</ion-label>
+			<ion-input type="text"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>e-mail:</ion-label>
+			<ion-input type="email"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Contraseña:</ion-label>
+			<ion-input type="password"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Contraseña:</ion-label>
+			<ion-input type="password"></ion-input>
+		</ion-item>
+	</ion-list>
+	<ion-row>
+		<ion-col class="signup-col">
+			<button color="secondary" ion-button class="submit-btn" full (click)="signIn()">Registrarse</button>
+		</ion-col>
+	</ion-row>
+</ion-content>

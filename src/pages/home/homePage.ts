@@ -4,8 +4,8 @@ import { NavController } from 'ionic-angular';
 import { DatabaseService } from '../../services/databaseService';
 
 @Component({
-	selector: 'page-home',
-	templateUrl: 'home.html'
+	selector: 'homePage',
+	templateUrl: 'homePage.html'
 })
 export class HomePage {
 
